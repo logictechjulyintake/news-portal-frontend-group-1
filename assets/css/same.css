@@ -1,0 +1,63 @@
+/* this file will store same kind of css which are used throughout the pages */
+/* colors for our site -> #487eb0, #ebebeb*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+.nav {
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    background-color: #ebebeb;
+    justify-content: space-between;
+}
+
+.nav a, .nav-profile {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+    float: left;
+}
+
+.nav a:hover , 
+.nav-profile:hover {
+    background-color: #cfcfcf;
+}
+
+a.active {
+    background-color: #cfcfcf;
+}
+
+.nav-profile {
+    position: relative;
+}
+
+.nav-profile-dropdown {
+    position: absolute;
+    background-color: #ebebeb;
+    right: 0;
+    top: 44px;
+    display: none;
+    flex-direction: column;
+    width: 200px;
+}
+
+.nav-profile-dropdown a {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-profile:hover .nav-profile-dropdown {
+    display: flex;
+}
+
+.logout {
+    background-color: red;
+    color: #ffffff !important;
+    font-weight: bold;
+}
