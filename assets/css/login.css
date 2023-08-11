@@ -1,0 +1,28 @@
+.login-form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.login-form label, .login-form button, .login-form  h3  {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.login-form input{
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.login-form button {
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: #487eb0;
+    outline: none;
+    border: none;
+    color: #ffffff;
+}

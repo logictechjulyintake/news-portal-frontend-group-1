@@ -7,11 +7,16 @@
     font-family: 'Playfair Display', serif;
 }
 
+body {
+    background-color: #ebebeb;
+}
+
 .nav {
     display: flex;
     flex-direction: row;
     background-color: #ebebeb;
     justify-content: space-between;
+    border-bottom: 1px solid #8e8e8e;
 }
 
 .nav a, .nav-profile {
