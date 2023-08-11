@@ -1,0 +1,33 @@
+.register-form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.register-form label, .register-form button, .register-form  h3  {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.register-form input{
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.register-form button {
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: #487eb0;
+    outline: none;
+    border: none;
+    color: #ffffff;
+}
+
+.register-form input[type=file]{
+    background-color: #ffffff;
+    cursor: pointer;
+}
