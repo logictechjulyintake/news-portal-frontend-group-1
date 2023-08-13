@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nPortal ~ + Post News</title>
+
+    <!-- title icon -->
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="assets/css/same.css">
+    <link rel="stylesheet" href="assets/css/post_news.css">
+
+    <!-- SUNEDITOR LIBRARY -->
+    <link href="https://cdn.jsdelivr.net/npm/suneditor@latest/dist/css/suneditor.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/suneditor@latest/dist/suneditor.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/suneditor@latest/src/lang/ko.js"></script>
+
+</head>
+
+<body>
+
+    <div class="nav">
+
+        <!-- left -->
+        <div>
+            <a href="/">
+                <img src="/assets/img/logo-blue.png" alt="" height="20" style="position: relative;top:5px;">
+                nPortal
+            </a>
+        </div>
+
+        <!-- right -->
+        <div>
+            <a href="login.html">
+                <img src="/assets/img/login.png" alt="" height="20" style="position: relative;top:5px;">
+                Login
+            </a>
+            <a href="register.html">
+                <img src="/assets/img/register.png" alt="" height="20" style="position: relative;top:5px;">
+                Register
+            </a>
+
+            <div href="#" class="nav-profile">
+                <img src="/assets/img/user.png" alt="" height="20" style="position: relative;top:5px;">
+                Kushal
+
+                <div class="nav-profile-dropdown">
+                    <a href="post_news.html" class="active">
+                        Post News
+                        <img src="/assets/img/add.png" alt="" height="20">
+                    </a>
+                    <a href="profile.html">
+                        Profile
+                        <img src="/assets/img/user.png" alt="" height="20">
+                    </a>
+                    <a href="#" class="logout">
+                        Logout
+                        <img src="/assets/img/logout.png" alt="" height="20">
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="post-news-form">
+
+        <div class="header">
+            <h3>Title <sup style="color: red;">*</sup></h3>
+            <input type="text" name="title" id="title" placeholder="Enter title of your news...">
+        </div>
+
+        <div class="body">
+            <h3>News Content <sup style="color: red;">*</sup></h3>
+            <textarea id="newsContent"></textarea>
+        </div>
+
+        <div class="footer">
+            <button onclick="postNews();" class="primary-btn">Post &rarr;</button>
+        </div>
+
+        <div id="postNewsMsg"></div>
+
+    </div>
+
+    <script src="assets/js/same.js"></script>
+    <script src="assets/js/post_news.js"></script>
+
+
+</body>
+
+</html>
