@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nPortal ~ Home</title>
+
+    <!-- title icon -->
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="assets/css/same.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/register.css">
+    <link rel="stylesheet" href="assets/css/profile.css">
+
+</head>
+
+<body>
+
+    <div class="nav">
+
+        <!-- left -->
+        <div>
+            <a href="/">
+                <img src="/assets/img/logo-blue.png" alt="" height="20" style="position: relative;top:5px;">
+                nPortal
+            </a>
+        </div>
+
+        <!-- right -->
+        <div>
+            <a href="login.html">
+                <img src="/assets/img/login.png" alt="" height="20" style="position: relative;top:5px;">
+                Login
+            </a>
+            <a href="register.html">
+                <img src="/assets/img/register.png" alt="" height="20" style="position: relative;top:5px;">
+                Register
+            </a>
+
+            <div href="#" class="nav-profile">
+                <img src="/assets/img/user.png" alt="" height="20" style="position: relative;top:5px;">
+                Kushal
+
+                <div class="nav-profile-dropdown">
+                    <a href="post_news.html">
+                        Post News
+                        <img src="/assets/img/add.png" alt="" height="20">
+                    </a>
+                    <a href="profile.html" class="active">
+                        Profile
+                        <img src="/assets/img/user.png" alt="" height="20">
+                    </a>
+                    <a href="#" class="logout">
+                        Logout
+                        <img src="/assets/img/logout.png" alt="" height="20">
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="profile-container">
+
+        <div class="profile-left-containter">
+            <img src="/assets/img/profile.jpg" alt="profile">
+            <div class="profile-info">
+                <span id="username">@logictechnepal</span>
+                <a href="mailto:logictechnepal@gmail.com" id="email">logictechnepal@gmail.com</a>
+                <span id="gender">&rarr; Male</span>
+            </div>
+        </div>
+
+        <div class="profile-right-containter">
+            <div class="profile-right-nav">
+                <a href="#" class="active" onclick="openNewsContent();" id="profileNewsBtn">News</a>
+                <a href="#" onclick="openAccountContent();" id="profileAccountBtn">Account</a>
+            </div>
+
+            <div class="profile-right-content" id="profileContent">
+                <div class="news-list" id="profileContentNews">
+
+                    <div class="news-box">
+                        
+                        <div class="header">
+                            <h3>Title</h3>
+                        </div>
+            
+                        <div class="body">
+                            <div class="content">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque alias veniam, unde minima at omnis. Error, vitae nostrum quidem atque, officia qui placeat totam assumenda expedita eaque laudantium voluptatem similique.
+                            </div>
+                        </div>
+            
+                        <div class="footer">
+                            <div style="font-style: italic;">
+                                <span >3 hours ago</span> ~ 
+                                <span>1k views</span>
+                            </div>
+            
+                            <div>
+                                <a href="#" class="read-news" style="margin-right: 5px;">
+                                    Edit 
+                                </a>
+                                <a href="#" class="read-news">
+                                    View 
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                
+                <div class="account-info" id="profileContentAccountInfo" style="display: none;">
+                    <div class="register-form" style="background-color: #ebebeb;">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username" placeholder="Enter you username..."/>
+                
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email..."/>
+                
+                        <label for="profilePicture">Profile picture</label>
+                        <input type="file" name="profilePicture" id="profilePicture" accept="image/png, image/jpeg" />
+                        <img id="profilePicturePreview" height="100" width="100" style="margin-top: 10px;background-color: aliceblue;object-fit: contain;">
+                
+                        <label for="gender">Gender</label>
+                        <div>
+                            <input type="radio" name="gender" id="genderM" value="male"> Male
+                            <input type="radio" name="gender" id="genderF" value="female"> Female
+                        </div>
+                
+                        <button>Update</button>
+                
+                        <div id="register-msg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="/assets/js/same.js"></script>
+    <script src="/assets/js/profile.js"></script>
+
+</body>
+
+</html>
